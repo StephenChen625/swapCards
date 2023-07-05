@@ -281,10 +281,10 @@ function organizeCards() {
     let card2 = player.cards[1];
     let card1Element = document.getElementById(`card${index * 2 + 1}`);
     let card2Element = document.getElementById(`card${index * 2 + 2}`);
-    if (card1.suit=='♦'){card1Element.style.color = '#d71345'}
-    if (card1.suit=='♣'){card1Element.style.color = '#130c0e'}
-    if (card2.suit=='♦'){card2Element.style.color = '#d71345'}
-    if (card2.suit=='♣'){card2Element.style.color = '#130c0e'}
+    if (card1.suit=='♥'){card1Element.style.color = '#d71345'}
+    if (card1.suit=='♠'){card1Element.style.color = '#130c0e'}
+    if (card2.suit=='♥'){card2Element.style.color = '#d71345'}
+    if (card2.suit=='♠'){card2Element.style.color = '#130c0e'}
     card1Element.innerHTML = `${card1.suit}${card1.value}`;
     card2Element.innerHTML = `${card2.suit}${card2.value}`;
     }
